@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background=" #D8E7FB">
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="259dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="19dp"
+        android:background="#EFF1E7"
+        android:text="분석차트"
+        android:textSize="55sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/wall"
+        android:layout_width="447dp"
+        android:layout_height="578dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save"
+        app:srcCompat="@drawable/hwite" />
+
+    <menu android:id="@+id/menu">
+
+        <item
+            android:id="@+id/항목1아이디"
+            android:title="항목1 제목" />
+
+        <item
+            android:id="@+id/항목2아이디"
+            android:title="항목2 제목" />
+    </menu>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="혈당"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="263dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="혈압(수축기)"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="385dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="혈압(이완기)"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="499dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
